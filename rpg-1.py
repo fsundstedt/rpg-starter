@@ -33,6 +33,8 @@ while Hero.alive() and Goblin.alive():
         print("You do %d damage to the goblin." % Hero.power)
         if Goblin.health <= 0:
             print("The goblin is dead.")
+            print("A zombie appears!<oh, no!>")
+
     elif user_input == "2":
         pass
     elif user_input == "3":
@@ -47,8 +49,6 @@ while Hero.alive() and Goblin.alive():
         print("The goblin does %d damage to you." % Goblin.power)
         if Hero.health <= 0:
             print("You are dead.")
-
-print("A zombie appears!<oh, no!>")
 
 while Hero.alive() and Zombie.alive():
     print("You have %d health left." %(Hero.health))
